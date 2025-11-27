@@ -30,7 +30,7 @@ It’s designed to be readable, hackable, and suitable for bioinformatcians stud
 
 1. Full matrix setup (rows = seq2, columns = seq1)
 
-2. Match/mismatch/gap scoring system
+2. Match/mismatch/(linear) gap scoring system
 
 3. Customizable scoring values
 
@@ -57,6 +57,7 @@ print(matrix_df)
 **Output:**
 
 <img width="1201" height="537" alt="image" src="https://github.com/user-attachments/assets/9bb74a2c-cdca-4599-9370-8000c3deba41" />
+
 
 
 
