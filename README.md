@@ -54,6 +54,11 @@ print(alignment_df)
 print(score)
 print(matrix_df)
 
+Output:
+
+<img width="1201" height="537" alt="image" src="https://github.com/user-attachments/assets/9bb74a2c-cdca-4599-9370-8000c3deba41" />
+
+
 **Notes / Limitations**:
 
 Local alignment can sometimes produce multiple equally optimal tracebacks.
