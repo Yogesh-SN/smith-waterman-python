@@ -5,6 +5,10 @@ This project contains a from-scratch implementation of the Smith–Waterman algo
 Everything - scoring matrix construction, traceback dictionary, and final alignment - is built manually for full transparency and learning value.
 
 
+<img width="300" height="420" alt="image" src="https://github.com/user-attachments/assets/803a64b0-deeb-4737-98f8-ebcad7034914" />
+
+
+
 **The code computes:**
 
 1. The scoring matrix
