@@ -52,7 +52,7 @@ def match_mismatch_diction(y,x,m,mm):
 #                                                                                                          ''' Matrix Filling '''
 
 
-def smith_max_function(y,x,i,j,mat,g,m,mm): #row,column,scoringmatrix,gap_penalty
+def SW_max_function(y,x,i,j,mat,g,m,mm): #row,column,scoringmatrix,gap_penalty
   triplemdict = match_mismatch_diction(y,x,m,mm)
 
 
@@ -65,14 +65,14 @@ def smith_max_function(y,x,i,j,mat,g,m,mm): #row,column,scoringmatrix,gap_penalt
 
   return (max_val,val_list.index(max_val)) #maintaing index of which value from the list is picked; would be used in making the 'max_where dict' -> will be used in traceback
 
-def smith_waterman_mat_filling(x,y,m,mm,g):
+def SW_mat_filling(x,y,m,mm,g):
   max_where_dict = dict() #initalize a max_where dictionary: Having keys as coordinated (i,j) and values as index of which value (max) from the val_list is picked up
   x_len, y_len = len(x),len(y)
   x_list, y_list = list(x),list(y)
   mat_main = mat_creater(x_len + 1,y_len + 1) #Initializing a matrix
   for i in range(1,len(mat_main)):
     for j in range(1, len(mat_main[i])):
-      mat_main[i][j], max_where_dict[(i,j)] = smith_max_function(y,x,i,j,mat_main,gap_pen,m,mm) #Filling matrix with values, after being passed through the smith_max_function
+      mat_main[i][j], max_where_dict[(i,j)] = SW_max_function(y,x,i,j,mat_main,gap_pen,m,mm) #Filling matrix with values, after being passed through the SW_max_function
       #and Dictionary Filling
 
   mat_main_df = pd.DataFrame(mat_main,
@@ -161,7 +161,7 @@ def recursion_traceback(
 def smith_waterman(a, b, m, mm, gap):
 
     alignment_array = alignment_match(a)
-    filled_matrix, tracebackdictionary, filled_matrix_df, CoordMax = smith_waterman_mat_filling(
+    filled_matrix, tracebackdictionary, filled_matrix_df, CoordMax = SW_mat_filling(
         a, b, m, mm, gap
     )
 
