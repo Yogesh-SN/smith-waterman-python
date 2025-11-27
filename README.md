@@ -1,9 +1,11 @@
 # smith-waterman-python
-Python implementation of the Smith–Waterman local alignment algorithm, complete with scoring matrix generation and alignment reconstruction.
+Python implementation and recreation of the Smith–Waterman (Smith & Waterman (1981)) local alignment algorithm, complete with scoring matrix generation and alignment reconstruction.
 
 This project contains a from-scratch implementation of the Smith–Waterman algorithm for local sequence alignment.
 Everything - scoring matrix construction, traceback dictionary, and final alignment - is built manually for full transparency and learning value.
+(The only libraries used are NumPy and Pandas)
 
+What the Algorithim is desgined to do:
 
 <img width="300" height="420" alt="image" src="https://github.com/user-attachments/assets/803a64b0-deeb-4737-98f8-ebcad7034914" />
 
