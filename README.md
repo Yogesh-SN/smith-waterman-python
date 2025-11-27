@@ -7,7 +7,8 @@ Everything - scoring matrix construction, traceback dictionary, and final alignm
 
 What the Algorithim is desgined to do:
 
-<img width="300" height="420" alt="image" src="https://github.com/user-attachments/assets/803a64b0-deeb-4737-98f8-ebcad7034914" />
+<img width="300" height="420" alt="image" src="https://github.com/user-attachments/assets/803a64b0-deeb-4737-98f8-ebcad7034914" />                        <img width="301" height="240" alt="image" src="https://github.com/user-attachments/assets/1db76a53-b90e-45f4-a021-432ecd0dd4ef" />
+
 
 
 
