@@ -1,7 +1,13 @@
 # smith-waterman-python
 Python implementation and recreation of the Smith–Waterman (Smith & Waterman (1981)) local alignment algorithm, complete with scoring matrix generation and alignment reconstruction.
 
-This project contains a from-scratch implementation of the Smith–Waterman algorithm for local sequence alignment.
+From WikiPedia: "_The Smith–Waterman algorithm performs local sequence alignment; that is, for determining similar regions between two strings of nucleic acid sequences. Instead of looking at the entire sequence, the Smith–Waterman algorithm compares segments of all possible lengths and optimizes the similarity measure._"
+
+"_The Smith-Waterman algorithm is widely used in bioinformatics for identifying similar regions between biological sequences, particularly in scenarios where global alignment is not appropriate.
+ Key applications include DNA sequence alignment to compare gene sequences, protein sequence alignment to identify similar functional domains, and database searches to find locally similar sequences within large biological databases_"
+ 
+This project contains a from-scratch implementation of the Smith–Waterman algorithm.
+
 Everything - scoring matrix construction, traceback dictionary, and final alignment - is built manually for full transparency and learning value.
 (The only libraries used are NumPy and Pandas)
 
