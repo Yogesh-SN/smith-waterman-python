@@ -36,7 +36,7 @@ It’s designed to be readable, hackable, and suitable for bioinformatcians stud
 
 6. Returns both the alignment and the full scoring matrix
 
-**Usage:**
+**Usage Example:**
 
 alignment_df, score, matrix_df = smith_waterman(
     seq1="CGTATCTCATT",
