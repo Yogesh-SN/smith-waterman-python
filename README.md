@@ -60,8 +60,11 @@ alignment_df, score, matrix_df = smith_waterman(
 )
 
 print(alignment_df)
+
 print(score)
+
 print(matrix_df)
+
 
 **Output:**
 
